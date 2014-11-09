@@ -2,6 +2,12 @@
 
 cd $(dirname $0)/..
 
+# pull '.ssh/private' dir
+cd private
+git pull
+cd -
+
+# pull '.ssh' dir
 git pull
 
 if [ -f config.hostname ] ; then

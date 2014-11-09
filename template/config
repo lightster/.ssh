@@ -1,4 +1,1 @@
-Host *.example.com
-  IdentityFile ~/.ssh/id_rsa{{KEY_HOSTNAME}}
-  Compression yes
-
+../private/template/config
