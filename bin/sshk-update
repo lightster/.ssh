@@ -25,7 +25,7 @@ else
 	KEY_HOSTNAME=""
 fi
 
-if [ -f template/config ] ; then
+if [ -e template/config ] ; then
 	cat template/config \
 		| sed "s/{{CUSTOM_HOSTNAME}}/${CUSTOM_HOSTNAME}/g" \
 		| sed "s/{{KEY_HOSTNAME}}/${KEY_HOSTNAME}/g" \
